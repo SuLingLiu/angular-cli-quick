@@ -1,0 +1,43 @@
+<!-- 头部区域 -->
+<nav class="navbar navbar-default navbar-fixed-top  navbar-inverse main-nav">
+    <div class="container">
+        <div class="collapse navbar-collapse navbar-responsive-collapse" aria-expanded="false">
+            <ul class="nav navbar-nav">
+                <li class="dropdown" routerLinkActive="active">
+                    <a routerLink="posts">集成图表</a>
+                </li>
+                <li class="dropdown" routerLinkActive="active">
+                    <a routerLink="map">高德地图</a>
+                </li>
+                <li class="dropdown" routerLinkActive="active">
+                    <a routerLink="case">总结的例子</a>
+                </li>
+                <li class="dropdown" routerLinkActive="active">
+                    <a routerLink="jsplumb">集成jsplumb</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li routerLinkActive="active">
+                    <a routerLink="login">登陆</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="register">注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 主体内容区域 -->
+<div class="container main-container">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- 测试用 -->
+<!--<app-contact></app-contact>-->
+
+<!-- 底部区域 -->
+<footer class="main-footer">
+    <div class="container"   [appHighlight]="'green'">底部</div>
+</footer>

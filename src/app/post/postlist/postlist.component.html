@@ -1,0 +1,45 @@
+<div class="post-list-container">
+    <!-- start 搜索 -->
+    <form class="form-vertical" role="form">
+        <div class="col-sm-10">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="搜索">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i>搜索</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="input-group">
+                <button class="btn btn-success" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>发布文章</button>
+            </div>
+        </div>
+    </form>
+    <!-- end 搜索 -->
+
+    <!-- start 列表区 -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="post-item-container">
+                <h4>
+                    <a class="text-primary" href="">如果你是新手，请务必先看完本项目的视频教程</a>
+                </h4>
+                <div class="text-danger contact">
+                    <span><i class="fa fa-thumbs-up" aria-hidden="true"></i>10</span>
+                    <span><i class="fa fa-comment" aria-hidden="true"></i>10</span>
+                    <span><i class="fa fa-eye" aria-hidden="true"></i>10</span>
+                    <span>大漠穷秋</span>
+                    <span>2016-11-21 10:44</span>
+                </div>
+            </div>
+
+            <div>
+                <pagination [totalItems]="totalItems" (pageChanged)="pageChanged($event)"></pagination>
+            </div>
+        </div>
+    </div>
+    <!-- end 列表区 -->
+</div>
